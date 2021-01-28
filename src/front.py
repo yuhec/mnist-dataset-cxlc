@@ -14,10 +14,10 @@ def front(img_path, model):
         predicted_y = model(img)
 
         # Prepare output
-        #prediction = dict()
+        prediction = dict()
         #prediction['best_probabilities'] = np.max(predicted_y)
         #prediction['number_selected'] = np.argmax(predicted_y)
-        return predicted_y
+        return prediction
         #return prediction
 
     except Exception as e:
