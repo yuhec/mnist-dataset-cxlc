@@ -4,6 +4,8 @@ import autokeras as ak
 import tensorflow as tf
 from autokeras.keras_layers import CastToFloat32
 
+from .front import front
+
 # API calls will begin at the apply() method, with the request body passed as 'input'
 # For more details, see algorithmia.com/developers/algorithm-development/languages
 
