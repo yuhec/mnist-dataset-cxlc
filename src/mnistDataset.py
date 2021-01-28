@@ -7,7 +7,7 @@ import autokeras as ak
 
 client = Algorithmia.client()
 
-model = load_model("../model_builder/model_autokeras", custom_objects=ak.CUSTOM_OBJECTS)
+model = load_model("data://.my/mnistDatasetCxlc/saved_model.pb", custom_objects=ak.CUSTOM_OBJECTS)
 
 def apply(input):
     o = front(input, model)
