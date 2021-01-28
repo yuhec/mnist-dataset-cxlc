@@ -17,8 +17,8 @@ def front(img_path, model):
         prediction = dict()
         prediction['best_probabilities'] = np.max(predicted_y)
         #prediction['number_selected'] = np.argmax(predicted_y)
-        return 'oui'
-        #return prediction
+        #return 'oui'
+        return prediction
 
     except Exception as e:
         return e
