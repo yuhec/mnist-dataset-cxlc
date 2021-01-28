@@ -18,4 +18,4 @@ def front(img_path, model):
         return prediction
 
     except Exception as e:
-        return str(e)
+        return e
