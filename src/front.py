@@ -9,7 +9,7 @@ def front(img_path, model):
         resp = urllib.request.urlopen(img_path)
         img = np.asarray(bytearray(resp.read()), dtype="uint8")
         #img = cv2.imread(img_path, cv2.IMREAD_GRAYSCALE)
-        #img = cv2.resize(img, (28,28))
+        img = cv2.resize(img, (28,28))
 
         #predicted_y = model(img)
 
