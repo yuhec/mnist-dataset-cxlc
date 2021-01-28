@@ -18,7 +18,8 @@ model = tf.keras.models.load_model(model_path, custom_objects={'CastToFloat32': 
 # model = load_model()
 
 def apply(input):
-    return input
+  o = front(input, model)
+  return o
     #if isinstance(input, str):
      #   path = client.file(input).getFile().name
       #  o = front(path, model)
