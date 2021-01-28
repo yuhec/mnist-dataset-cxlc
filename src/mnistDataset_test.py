@@ -1,4 +1,4 @@
 from . import mnistDataset
 
 def test_mnistDataset():
-    assert mnistDataset.apply("Jane") == "hello Jane"
+    assert mnistDataset.apply("../data/six.png") == {'best_probabilities': 0.97026044, 'number_selected': 8}
